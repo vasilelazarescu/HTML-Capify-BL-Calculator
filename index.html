@@ -1,15 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Loan Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-card">
+            <!-- Header Section -->
+            <div class="header">
+                <h1 class="title">Business Loan Calculator</h1>
+                <p class="subtitle">Get an estimate of how much you might be able to borrow in under a minute.</p>
+            </div>
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Generate HTML Code</title>
-    </head>
+            <!-- Loan Duration Section -->
+            <div class="input-section">
+                <label class="input-label">How long do you want to lend over?</label>
+                <p class="input-value">6 months</p>
+                <div class="slider-container">
+                    <div class="slider-track"></div>
+                    <div class="slider-progress" style="width: 34.8%;"></div>
+                    <div class="slider-thumb" style="left: calc(34.8% - 14px);"></div>
+                </div>
+            </div>
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
-  
+            <!-- Monthly Turnover Section -->
+            <div class="input-section">
+                <label class="input-label">What is your monthly average turnover?</label>
+                <p class="input-value">£ 110,000</p>
+                <div class="slider-container">
+                    <div class="slider-track"></div>
+                    <div class="slider-progress" style="width: 25.6%;"></div>
+                    <div class="slider-thumb" style="left: calc(25.6% - 14px);"></div>
+                </div>
+            </div>
+
+            <!-- Calculate Button -->
+            <button class="calculate-btn">Calculate</button>
+
+            <!-- Results Panel -->
+            <div class="results-panel">
+                <div class="results-header">
+                    <h2 class="results-title">Congratulations!</h2>
+                    <p class="results-subtitle">You may be eligible for a loan amount up to:</p>
+                    <p class="loan-amount">£68,095</p>
+                    <p class="disclaimer">* Subject to Capify's standard credit assessment criterial terms & conditions</p>
+                </div>
+
+                <div class="divider"></div>
+
+                <p class="section-label">Your Repayment:</p>
+
+                <div class="repayment-grid">
+                    <div class="repayment-item">
+                        <p class="repayment-label">Daily repayments:</p>
+                        <p class="repayment-value">£715</p>
+                    </div>
+                    <div class="vertical-divider"></div>
+                    <div class="repayment-item">
+                        <p class="repayment-label">Monthly repayments:</p>
+                        <p class="repayment-value">£14,300</p>
+                    </div>
+                    <div class="vertical-divider"></div>
+                    <div class="repayment-item">
+                        <p class="repayment-label">Total Cost of Loan:</p>
+                        <p class="repayment-value">£17,705</p>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="total-section">
+                    <p class="total-label">Total Repayment:</p>
+                    <p class="total-value">£85,800</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

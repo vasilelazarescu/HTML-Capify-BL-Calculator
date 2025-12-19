@@ -8,7 +8,7 @@ function Frame1() {
 }
 
 function Bt() {
-  return <div className="absolute bg-[#f5f7f8] h-[8px] right-[56px] rounded-[32px] top-[247px] w-[464px]" data-name="bt" />;
+  return <div className="absolute bg-[#f5f7f8] h-[8px] right-[680px] rounded-[32px] top-[247px] w-[464px]" data-name="bt" />;
 }
 
 function Frame() {
@@ -25,7 +25,7 @@ function Frame() {
 
 function Bt1() {
   return (
-    <div className="absolute bg-[#a6ce39] h-[8px] right-[358.44px] rounded-[32px] top-[247px] w-[161.558px]" data-name="bt">
+    <div className="absolute bg-[#a6ce39] h-[8px] right-[982.44px] rounded-[32px] top-[247px] w-[161.558px]" data-name="bt">
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center px-[147px] py-[4px] relative size-full">
           <Frame />
@@ -37,7 +37,7 @@ function Bt1() {
 
 function Group() {
   return (
-    <div className="absolute contents right-[56px] top-[247px]">
+    <div className="absolute contents right-[680px] top-[247px]">
       <Bt />
       <Bt1 />
     </div>
@@ -45,7 +45,7 @@ function Group() {
 }
 
 function Bt2() {
-  return <div className="absolute bg-[#f5f7f8] h-[8px] right-[56px] rounded-[32px] top-[368px] w-[464px]" data-name="bt" />;
+  return <div className="absolute bg-[#f5f7f8] h-[8px] right-[680px] rounded-[32px] top-[368px] w-[464px]" data-name="bt" />;
 }
 
 function Frame2() {
@@ -62,7 +62,7 @@ function Frame2() {
 
 function Bt3() {
   return (
-    <div className="absolute bg-[#a6ce39] h-[8px] right-[401px] rounded-[32px] top-[368px] w-[119px]" data-name="bt">
+    <div className="absolute bg-[#a6ce39] h-[8px] right-[1025px] rounded-[32px] top-[368px] w-[119px]" data-name="bt">
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex items-center px-[99px] py-[4px] relative size-full">
           <Frame2 />
@@ -74,7 +74,7 @@ function Bt3() {
 
 function Group1() {
   return (
-    <div className="absolute contents right-[56px] top-[368px]">
+    <div className="absolute contents right-[680px] top-[368px]">
       <Bt2 />
       <Bt3 />
     </div>
@@ -83,25 +83,10 @@ function Group1() {
 
 function Bt4() {
   return (
-    <div className="absolute bg-[#a6ce39] content-stretch flex h-[56px] items-center justify-end px-[5px] py-[4px] right-[339px] rounded-[32px] top-[426px] w-[181px]" data-name="bt">
+    <div className="absolute bg-[#a6ce39] content-stretch flex h-[56px] items-center justify-end px-[5px] py-[4px] right-[963px] rounded-[32px] top-[426px] w-[181px]" data-name="bt">
       <div className="basis-0 flex flex-col font-['Poppins:SemiBold',sans-serif] grow justify-center leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#0b3558] text-[16px] text-center tracking-[-0.08px]">
         <p className="leading-[1.1]">Calculate</p>
       </div>
-    </div>
-  );
-}
-
-function Frame4() {
-  return (
-    <div className="absolute bg-white border-[#edf1f2] border-[0px_0px_1px] border-solid h-[526px] left-[64px] rounded-[24px] top-[32px] w-[576px]">
-      <Frame1 />
-      <p className="absolute font-['Poppins:SemiBold',sans-serif] leading-[1.65] left-[56px] not-italic text-[#333] text-[16px] top-[174px] w-[496px]">How long do you want to lend over?</p>
-      <p className="absolute font-['Poppins:Bold',sans-serif] leading-[1.65] left-[56px] not-italic text-[#0b3558] text-[20px] text-nowrap top-[200px]">6 months</p>
-      <Group />
-      <p className="absolute font-['Poppins:SemiBold',sans-serif] leading-[1.65] left-[56px] not-italic text-[#333] text-[16px] top-[295px] w-[496px]">What is your monthly average turnover?</p>
-      <p className="absolute font-['Poppins:Bold',sans-serif] leading-[1.65] left-[56px] not-italic text-[#0b3558] text-[20px] text-nowrap top-[321px]">£ 110,000</p>
-      <Group1 />
-      <Bt4 />
     </div>
   );
 }
@@ -177,8 +162,8 @@ function Frame10() {
 
 function Frame5() {
   return (
-    <div className="absolute bg-white content-stretch flex flex-col gap-[23px] h-[526px] items-center left-[688px] p-[40px] rounded-[24px] top-[32px] w-[576px]">
-      <div aria-hidden="true" className="absolute border-[#edf1f2] border-[0px_0px_1px] border-solid inset-0 pointer-events-none rounded-[24px]" />
+    <div className="absolute bg-[#f5f7f8] content-stretch flex flex-col gap-[12px] h-[478px] items-center justify-center left-[616px] px-[32px] py-[40px] rounded-[12px] top-[24px] w-[560px]">
+      <div aria-hidden="true" className="absolute border-[#edf1f2] border-[0px_0px_1px] border-solid inset-0 pointer-events-none rounded-[12px]" />
       <Frame3 />
       <Bt5 />
       <p className="font-['Poppins:SemiBold',sans-serif] leading-[1.65] not-italic relative shrink-0 text-[#333] text-[16px] text-center w-full">Your Repayment:</p>
@@ -189,15 +174,17 @@ function Frame5() {
   );
 }
 
-export default function Frame11() {
+export default function Frame4() {
   return (
-    <div className="relative size-full">
-      <div className="absolute flex h-[590px] items-center justify-center left-1/2 top-0 translate-x-[-50%] w-[1328px]">
-        <div className="flex-none rotate-[180deg]">
-          <div className="bg-[#f5f7f8] h-[590px] w-[1328px]" />
-        </div>
-      </div>
-      <Frame4 />
+    <div className="bg-white border-[#edf1f2] border-[0px_0px_1px] border-solid relative rounded-[24px] size-full">
+      <Frame1 />
+      <p className="absolute font-['Poppins:SemiBold',sans-serif] leading-[1.65] left-[56px] not-italic text-[#333] text-[16px] top-[174px] w-[496px]">How long do you want to lend over?</p>
+      <p className="absolute font-['Poppins:Bold',sans-serif] leading-[1.65] left-[56px] not-italic text-[#0b3558] text-[20px] text-nowrap top-[200px]">6 months</p>
+      <Group />
+      <p className="absolute font-['Poppins:SemiBold',sans-serif] leading-[1.65] left-[56px] not-italic text-[#333] text-[16px] top-[295px] w-[496px]">What is your monthly average turnover?</p>
+      <p className="absolute font-['Poppins:Bold',sans-serif] leading-[1.65] left-[56px] not-italic text-[#0b3558] text-[20px] text-nowrap top-[321px]">£ 110,000</p>
+      <Group1 />
+      <Bt4 />
       <Frame5 />
     </div>
   );

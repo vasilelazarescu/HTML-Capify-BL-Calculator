@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7f8;
+    padding: 40px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.calculator-card {
+    background: white;
+    border-radius: 24px;
+    border-bottom: 1px solid #edf1f2;
+    padding: 40px 56px;
+    position: relative;
+    min-height: 526px;
+}
+
+/* Header Section */
+.header {
+    margin-bottom: 60px;
+    max-width: 464px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.5;
+    color: #0b3558;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.65;
+    color: #333;
+}
+
+/* Input Sections */
+.input-section {
+    margin-bottom: 40px;
+    max-width: 496px;
+}
+
+.input-label {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.65;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.input-value {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.65;
+    color: #0b3558;
+    margin-bottom: 20px;
+}
+
+/* Slider Styles */
+.slider-container {
+    position: relative;
+    height: 28px;
+    max-width: 464px;
+}
+
+.slider-track {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background-color: #f5f7f8;
+    border-radius: 32px;
+}
+
+.slider-progress {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 8px;
+    background-color: #a6ce39;
+    border-radius: 32px;
+    z-index: 1;
+}
+
+.slider-thumb {
+    position: absolute;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background-color: #a6ce39;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-thumb::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+/* Calculate Button */
+.calculate-btn {
+    background-color: #a6ce39;
+    color: #0b3558;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.08px;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    min-width: 181px;
+    height: 56px;
+    margin-top: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.calculate-btn:hover {
+    background-color: #95ba2f;
+}
+
+/* Results Panel */
+.results-panel {
+    position: absolute;
+    right: 56px;
+    top: 24px;
+    width: 560px;
+    background-color: #f5f7f8;
+    border: 1px solid #edf1f2;
+    border-radius: 12px;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.results-header {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.results-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.65;
+    color: #0b3558;
+    margin-bottom: 7px;
+}
+
+.results-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.65;
+    color: #333;
+    margin-bottom: 7px;
+}
+
+.loan-amount {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.5;
+    color: #0b3558;
+    margin-bottom: 7px;
+}
+
+.disclaimer {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #626d7c;
+}
+
+.divider {
+    height: 1px;
+    background-color: #edf1f2;
+}
+
+.section-label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.65;
+    color: #333;
+    text-align: center;
+}
+
+/* Repayment Grid */
+.repayment-grid {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    height: 49px;
+}
+
+.repayment-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.repayment-label {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #626d7c;
+    margin-bottom: 4px;
+}
+
+.repayment-value {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.65;
+    color: #0b3558;
+    white-space: nowrap;
+}
+
+.vertical-divider {
+    width: 1px;
+    height: 100%;
+    background-color: #edf1f2;
+}
+
+/* Total Section */
+.total-section {
+    text-align: center;
+}
+
+.total-label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.65;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.total-value {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.65;
+    color: #0b3558;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .calculator-card {
+        padding: 40px 32px;
+    }
+    
+    .results-panel {
+        position: static;
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .calculator-card {
+        padding: 24px 20px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .repayment-grid {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    .vertical-divider {
+        display: none;
+    }
+
+    .results-panel {
+        padding: 24px 20px;
+    }
+}
